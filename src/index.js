@@ -1,13 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-function Main() {
+import styled, { createGlobalStyle } from 'styled-components';
+
+import Grid from './components/Grid';
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+    padding: 0;
+  }
+`;
+
+const Fortune = styled.div`
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background: #ebebeb;
+  align-items: center;
+  justify-content: center;
+`;
+
+const Main = () => {
   return (
-    <div className="App">
-      <div> Grid HERE</div>
-    </div>
+    <Fortune>
+      <GlobalStyle />
+      <Grid />
+    </Fortune>
   );
-}
+};
 
-ReactDOM.render(Main(), document.getElementById('root'));
-
+ReactDOM.render(Main(), global.document.getElementById('root'));
