@@ -5,30 +5,48 @@ import Letter from '../Letter';
 
 const GRID_ROW = 14;
 const GRID_SIZE = GRID_ROW * 4;
-
-const gridColumns = [...Array(GRID_ROW)].map(() => '1fr ');
+const MAX_WORD_SIZE = GRID_ROW - 2;
 
 const Wall = styled.div`
   display: grid;
-
   height: 600px;
   grid-gap: 5px;
-  grid-template-columns: ${gridColumns};
+  grid-template-columns: repeat(${GRID_ROW}, 1fr);
   background-color: black;
   border: 5px solid black;
 `;
 
 const Border = styled.div`
-  border: 20px solid darkgoldenrod;
   width: 1200px;
+  border: 20px solid darkgoldenrod;
 `;
 
-const createLetters = [...Array(GRID_SIZE)].map(() => <Letter />);
+let counter = 0;
 
-const Grid = () => {
+const placeLetters = word =>
+  [...Array(GRID_SIZE)].map((e, i) => {
+    let character = null;
+    const letterPointer = Math.floor((GRID_ROW - word.length) / 2 + GRID_ROW);
+
+    if (word.length < MAX_WORD_SIZE && i >= letterPointer && i < 27) {
+      character = word.substring(counter, counter + 1);
+      counter++;
+    }
+
+    if (character === ' ') {
+      character = null;
+    }
+
+    return <Letter key={i} letter={character} />;
+  });
+
+const Grid = props => {
+  const { word } = props;
+
+  counter = 0;
   return (
     <Border>
-      <Wall>{createLetters}</Wall>
+      <Wall>{placeLetters(word)}</Wall>
     </Border>
   );
 };
