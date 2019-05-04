@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled, { css } from 'styled-components';
 
 const Card = styled.div`
@@ -8,6 +8,8 @@ const Card = styled.div`
   color: transparent;
   font-size: 5.5rem;
   background-color: #3254c5;
+  user-select: none;
+  cursor: default;
 
   ${props =>
     props.letter &&
@@ -15,14 +17,43 @@ const Card = styled.div`
       background-color: white;
       font-weight: 900;
       text-transform: uppercase;
-      color: black;
       line-height: 1px;
+      transition: 1s color;
+      cursor: pointer;
+    `}
+
+  ${props =>
+    props.letter &&
+    props.showLetter &&
+    css`
+      color: black;
     `}
 `;
 
-const Letter = props => {
-  const { letter } = props;
-  return <Card letter={letter}>{letter}</Card>;
-};
+class Letter extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { showLetter: false };
+  }
+
+  setRevealLetter = () => {
+    this.setState({ showLetter: true });
+  };
+
+  render() {
+    const { letter } = this.props;
+    const { showLetter } = this.state;
+
+    return (
+      <Card
+        showLetter={showLetter}
+        onClick={() => this.setRevealLetter()}
+        letter={letter}
+      >
+        {letter}
+      </Card>
+    );
+  }
+}
 
 export default Letter;

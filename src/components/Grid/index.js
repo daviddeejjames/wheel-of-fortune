@@ -22,22 +22,27 @@ const Border = styled.div`
 `;
 
 let counter = 0;
+let character;
+
+const placeLetter = word => {
+  character = word.substring(counter, counter + 1);
+  counter++;
+};
 
 const placeLetters = word =>
   [...Array(GRID_SIZE)].map((e, i) => {
-    let character = null;
     const letterPointer = Math.floor((GRID_ROW - word.length) / 2 + GRID_ROW);
 
+    // Row One
     if (word.length < MAX_WORD_SIZE && i >= letterPointer && i < 27) {
-      character = word.substring(counter, counter + 1);
-      counter++;
+      placeLetter(word);
     }
 
     if (character === ' ') {
       character = null;
     }
 
-    return <Letter key={i} letter={character} />;
+    return <Letter key={word + i} letter={character} />;
   });
 
 const Grid = props => {
