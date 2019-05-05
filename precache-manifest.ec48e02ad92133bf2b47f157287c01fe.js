@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "627a73347d67a2740e0e313fc1a0a771",
+    "revision": "d76d9604ac09ebbd990c253142678625",
     "url": "/daviddeejjames/wheel-of-fortune/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/daviddeejjames/wheel-of-fortune/static/js/2.c4a177cf.chunk.js"
   },
   {
-    "revision": "4e9dea1a530e286c4f8e",
-    "url": "/daviddeejjames/wheel-of-fortune/static/js/main.d4eebe3d.chunk.js"
+    "revision": "ee04f851fd0bb2a2d769",
+    "url": "/daviddeejjames/wheel-of-fortune/static/js/main.19b8e5c2.chunk.js"
   },
   {
     "revision": "b0124a70f83ee4b0e579",
