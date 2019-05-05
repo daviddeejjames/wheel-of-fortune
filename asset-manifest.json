@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/daviddeejjames/wheel-of-fortune/static/js/main.d4eebe3d.chunk.js",
+    "main.js.map": "/daviddeejjames/wheel-of-fortune/static/js/main.d4eebe3d.chunk.js.map",
+    "runtime~main.js": "/daviddeejjames/wheel-of-fortune/static/js/runtime~main.c0aa87c1.js",
+    "runtime~main.js.map": "/daviddeejjames/wheel-of-fortune/static/js/runtime~main.c0aa87c1.js.map",
+    "static/js/2.c4a177cf.chunk.js": "/daviddeejjames/wheel-of-fortune/static/js/2.c4a177cf.chunk.js",
+    "static/js/2.c4a177cf.chunk.js.map": "/daviddeejjames/wheel-of-fortune/static/js/2.c4a177cf.chunk.js.map",
+    "index.html": "/daviddeejjames/wheel-of-fortune/index.html",
+    "precache-manifest.7a026d896d3e840fe8a9484dc15e96f3.js": "/daviddeejjames/wheel-of-fortune/precache-manifest.7a026d896d3e840fe8a9484dc15e96f3.js",
+    "service-worker.js": "/daviddeejjames/wheel-of-fortune/service-worker.js"
+  }
+}
