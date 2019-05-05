@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d76d9604ac09ebbd990c253142678625",
+    "revision": "575e0a047417e7d60f8013ff746b94e5",
     "url": "/daviddeejjames/wheel-of-fortune/index.html"
   },
   {

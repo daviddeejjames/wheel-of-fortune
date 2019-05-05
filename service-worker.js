@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/daviddeejjames/wheel-of-fortune/precache-manifest.ec48e02ad92133bf2b47f157287c01fe.js"
+  "/daviddeejjames/wheel-of-fortune/precache-manifest.f1350bdbb42095f587a18d670cb23147.js"
 );
 
 self.addEventListener('message', (event) => {
