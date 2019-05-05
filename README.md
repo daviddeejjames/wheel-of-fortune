@@ -1,6 +1,6 @@
 # Wheel Of Fortune - minus the wheel
 
-[Live Here](TBA)
+[Live Here](https://daviddeejjames.github.io/wheel-of-fortune/)
 
 React based UI game using CSS Grid
 
