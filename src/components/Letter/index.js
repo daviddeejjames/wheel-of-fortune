@@ -9,17 +9,49 @@ const Card = styled.div`
   font-size: 5.5rem;
   background-color: #3254c5;
   user-select: none;
+  position: relative;
+  z-index: 10;
   cursor: default;
 
   ${props =>
     props.letter &&
     css`
       background-color: white;
-      font-weight: 900;
-      text-transform: uppercase;
+      outline: 1px solid black;
       line-height: 1px;
-      transition: 1s color;
+      position: relative;
+      transform-style: preserve-3d;
+      text-transform: uppercase;
+      font-weight: 900;
+      transform: rotateY(180deg);
+      transition: opacity 0.9s, color 1s 0.2s, transform 1s;
       cursor: pointer;
+
+      &:before {
+        position: absolute;
+        content: '';
+        transform: rotateY(90deg);
+        width: 50%;
+        height: 100%;
+        background: white;
+        position: absolute;
+        top: 0;
+        left: -25%;
+      }
+
+      &:after {
+        position: absolute;
+        content: '';
+        transform: rotateY(180deg);
+        width: 100%;
+        height: 100%;
+        background: white;
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        opacity: 1;
+      }
     `}
 
   ${props =>
@@ -27,6 +59,11 @@ const Card = styled.div`
     props.showLetter &&
     css`
       color: black;
+      transform: rotateY(0deg);
+
+      &:after {
+        opacity: 0;
+      }
     `}
 `;
 

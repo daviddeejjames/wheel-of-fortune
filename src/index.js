@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Abril Fatface', serif;
   }
 `;
 
@@ -49,7 +49,9 @@ class WheelOfFortune extends Component {
       'EsLint',
       'Prettier',
       'Create React App',
-      'REA Group'
+      'REA Group',
+      'Gatsby',
+      'Lighthouse'
     ];
 
     return WordList[Math.floor(Math.random() * WordList.length)];
