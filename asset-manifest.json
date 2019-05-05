@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/daviddeejjames/wheel-of-fortune/static/js/main.19b8e5c2.chunk.js",
-    "main.js.map": "/daviddeejjames/wheel-of-fortune/static/js/main.19b8e5c2.chunk.js.map",
-    "runtime~main.js": "/daviddeejjames/wheel-of-fortune/static/js/runtime~main.c0aa87c1.js",
-    "runtime~main.js.map": "/daviddeejjames/wheel-of-fortune/static/js/runtime~main.c0aa87c1.js.map",
-    "static/js/2.c4a177cf.chunk.js": "/daviddeejjames/wheel-of-fortune/static/js/2.c4a177cf.chunk.js",
-    "static/js/2.c4a177cf.chunk.js.map": "/daviddeejjames/wheel-of-fortune/static/js/2.c4a177cf.chunk.js.map",
-    "index.html": "/daviddeejjames/wheel-of-fortune/index.html",
-    "precache-manifest.a647fe51fa6c69060475c8b6c3ec492c.js": "/daviddeejjames/wheel-of-fortune/precache-manifest.a647fe51fa6c69060475c8b6c3ec492c.js",
-    "service-worker.js": "/daviddeejjames/wheel-of-fortune/service-worker.js"
+    "main.js": "/wheel-of-fortune/static/js/main.19b8e5c2.chunk.js",
+    "main.js.map": "/wheel-of-fortune/static/js/main.19b8e5c2.chunk.js.map",
+    "runtime~main.js": "/wheel-of-fortune/static/js/runtime~main.6b9b1219.js",
+    "runtime~main.js.map": "/wheel-of-fortune/static/js/runtime~main.6b9b1219.js.map",
+    "static/js/2.5a9d768d.chunk.js": "/wheel-of-fortune/static/js/2.5a9d768d.chunk.js",
+    "static/js/2.5a9d768d.chunk.js.map": "/wheel-of-fortune/static/js/2.5a9d768d.chunk.js.map",
+    "index.html": "/wheel-of-fortune/index.html",
+    "precache-manifest.32e07e532debf06c3e1fd12d1e178dd2.js": "/wheel-of-fortune/precache-manifest.32e07e532debf06c3e1fd12d1e178dd2.js",
+    "service-worker.js": "/wheel-of-fortune/service-worker.js"
   }
 }
